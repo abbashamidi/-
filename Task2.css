@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #ff6347;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+}
+
+.header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.end {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-image: url(./wave.svg);
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Center the image */
+  height: 200px;
+}
+
+.btn-container {
+  display: flex;
+  width: 90vw;
+  height: 40vh;
+  margin: 24px auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  width: 160px;
+  height: 180px;
+  border-radius: 15px;
+  background-color: tomato;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.btn img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn p {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
