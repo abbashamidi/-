@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  background-color: tomato;
+  padding: 12px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+#output {
+  width: 80%;
+  height: fit-content;
+  margin: 24px auto;
+  background-color: skyblue;
+}
+
+#output p {
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 20px;
+}
