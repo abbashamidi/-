@@ -6,6 +6,8 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 .header {
@@ -13,7 +15,7 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
-  background-color: #ff6347;
+  background-color: #482CFF;
   justify-content: space-between;
   padding: 0 24px;
 }
@@ -22,6 +24,7 @@ body {
   font-size: 18px;
   color: #fff;
   display: inline-block;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 .header img {
@@ -30,42 +33,33 @@ body {
   height: 50px;
 }
 
-.end {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  background-image: url(./wave.svg);
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center the image */
-  height: 200px;
-}
-
 .btn-container {
   display: flex;
+  flex-wrap: wrap;
   width: 90vw;
-  height: 40vh;
+  height: fit-content;
   margin: 24px auto;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .btn {
   display: flex;
-  width: 160px;
-  height: 180px;
-  border-radius: 15px;
-  background-color: tomato;
+  width: 150px;
+  height: 170px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #482CFF;
   flex-direction: column;
   gap: 24px;
+  margin: 12px;
+  justify-content: center;
+  box-shadow: 3px 3px 4px #482CFF;
 }
 
 .btn img {
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 35%;
   display: block;
   margin: 0 auto;
 }
@@ -73,9 +67,23 @@ body {
 .btn p {
   text-transform: capitalize;
   text-align: center;
+  font-size: 17px;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 .btn a {
   text-decoration: none;
   color: #fff;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+  transition-delay: 0.1s;
+}
+
+.btn a:hover {
+  font-size: 19px;
+}
+
+.end {
+  width: 100%;
+  height: 50px;
 }
